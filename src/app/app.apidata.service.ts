@@ -4,7 +4,7 @@ import { RouterModule,Routes } from '@angular/router';
 import { Http }    from '@angular/http';
 import 'rxjs/add/operator/Map';
 @Injectable()
-export class apiData  { 
+export class apiData  {  
 
 
 constructor (public http:Http){

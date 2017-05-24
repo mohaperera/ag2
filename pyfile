@@ -1,0 +1,20 @@
+import mysql.connector  
+
+import mysql.connector    
+cnx = mysql.connector.connect(user='root', password='123',
+                              host='localhost',
+                              database='osc')
+
+try:
+   cursor = cnx.cursor()
+   cursor.execute("""
+      select * from products
+   """)
+   
+
+   for row in cursor.fetchall() :  
+    print (row[0],row[1],row[3],row[4])  
+ 
+   
+finally:
+    cnx.close()
